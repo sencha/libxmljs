@@ -14,12 +14,14 @@
   "description": "libxml bindings for v8 javascript engine",
   "version": "0.18.4",
   "scripts": {
-    "install": "node-pre-gyp install --fallback-to-build --loglevel http",
+    "install": "echo",
+    "build": "node-gyp rebuild",
+    "pre-gyp": "node-pre-gyp install --fallback-to-build --loglevel http",
     "test": "node --expose_gc ./node_modules/.bin/nodeunit test"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/libxmljs/libxmljs.git"
+    "url": "http://github.com/craigcomstocks/libxmljs.git"
   },
   "bugs": {
     "url": "http://github.com/libxmljs/libxmljs/issues"
@@ -31,7 +33,7 @@
   },
   "dependencies": {
     "node-pre-gyp": "~0.6.32",
-    "bindings": "1.2.1",
+    "bindings": "craigcomstocks/node-bindings#find-by-abi",
     "nan": "~2.5.0"
   },
   "devDependencies": {

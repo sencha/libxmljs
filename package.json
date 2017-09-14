@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/craigcomstocks/libxmljs.git"
+    "url": "http://github.com/sencha/libxmljs.git"
   },
   "bugs": {
     "url": "http://github.com/libxmljs/libxmljs/issues"
@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "node-pre-gyp": "~0.6.32",
-    "bindings": "craigcomstocks/node-bindings#find-by-abi",
+    "bindings": "sencha/node-bindings#find-by-abi",
     "nan": "~2.5.0"
   },
   "devDependencies": {

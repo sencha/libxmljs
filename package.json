@@ -18,7 +18,7 @@
     "build": "node-gyp rebuild",
     "pre-gyp": "node-pre-gyp install --fallback-to-build --loglevel http",
     "electron": "node-gyp rebuild --runtime=electron --target=1.4.4 --disturl=https://atom.io/download/atom-shell --build-from-source",
-    "test": "node --expose_gc ./node_modules/.bin/nodeunit test"
+    "test": "node --expose_gc ./node_modules/nodeunit/bin/nodeunit test"
   },
   "repository": {
     "type": "git",
